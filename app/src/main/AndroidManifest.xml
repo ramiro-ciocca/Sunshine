@@ -36,6 +36,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lulisoft.sunshine.DetailActivity" />
         </activity>
+
+        <provider
+            android:authorities="com.lulisoft.sunshine"
+            android:name=".data.WeatherProvider">
+        </provider>
+
     </application>
 
 </manifest>
