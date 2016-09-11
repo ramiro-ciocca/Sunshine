@@ -13,7 +13,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setupActionBar();
+//        setupActionBar();
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsActivityFragment())
                 .commit();
