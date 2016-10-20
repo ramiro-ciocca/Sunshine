@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 /**
  * {@link ForecastAdapter} exposes a list of weather forecasts
  * from a {@link android.database.Cursor} to a {@link android.widget.ListView}.
@@ -40,12 +41,14 @@ public class ForecastAdapter extends CursorAdapter {
         int viewType = getItemViewType(cursor.getPosition());
         int layoutId = -1;
         switch (viewType) {
-            case VIEW_TYPE_TODAY:
+            case VIEW_TYPE_TODAY: {
                 layoutId = R.layout.list_item_forecast_today;
                 break;
-            case VIEW_TYPE_FUTURE_DAY:
+            }
+            case VIEW_TYPE_FUTURE_DAY: {
                 layoutId = R.layout.list_item_forecast;
                 break;
+            }
         }
         View view = LayoutInflater.from(context).inflate(layoutId, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
@@ -61,13 +64,25 @@ public class ForecastAdapter extends CursorAdapter {
 
         ViewHolder viewHolder = (ViewHolder) view.getTag();
 
+        // Read weather condition ID from cursor
+        int weatherId = cursor.getInt(ForecastFragment.COL_WEATHER_CONDITION_ID);
         long date = cursor.getLong(ForecastFragment.COL_WEATHER_DATE);
         double high = cursor.getDouble(ForecastFragment.COL_WEATHER_MAX_TEMP);
         double low = cursor.getDouble(ForecastFragment.COL_WEATHER_MIN_TEMP);
         boolean isMetric = Utility.isMetric(context);
         String forecast = cursor.getString(ForecastFragment.COL_WEATHER_DESC);
 
-        viewHolder.iconView.setImageResource(R.mipmap.ic_launcher);
+        int viewType = getItemViewType(cursor.getPosition());
+        switch (viewType) {
+            case VIEW_TYPE_TODAY: {
+                viewHolder.iconView.setImageResource(Utility.getArtResourceForWeatherCondition(weatherId));
+                break;
+            }
+            case VIEW_TYPE_FUTURE_DAY: {
+                viewHolder.iconView.setImageResource(Utility.getIconResourceForWeatherCondition(weatherId));
+                break;
+            }
+        }
         viewHolder.dateView.setText(Utility.getFriendlyDayString(context, date));
         viewHolder.descriptionView.setText(forecast);
         viewHolder.highTempView.setText(Utility.formatTemperature(context, high, isMetric));
