@@ -11,13 +11,11 @@
         <TextView
             android:id="@+id/detail_day_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Today"/>
+            android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/detail_date_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="June 24"/>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,14 +32,12 @@
                 <TextView
                     android:id="@+id/detail_high_textview"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="20º">
+                    android:layout_height="wrap_content">
                 </TextView>
                 <TextView
                     android:id="@+id/detail_low_textview"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="13º">
+                    android:layout_height="wrap_content">
                 </TextView>
 
             </LinearLayout>
@@ -56,14 +52,12 @@
                 <ImageView
                     android:id="@+id/detail_icon"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher">
+                    android:layout_height="wrap_content">
                 </ImageView>
                 <TextView
                     android:id="@+id/detail_description_textview"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Clear">
+                    android:layout_height="wrap_content">
                 </TextView>
 
             </LinearLayout>
@@ -73,22 +67,19 @@
         <TextView
             android:id="@+id/detail_humidity_textview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Humidity: 81%">
+            android:layout_height="wrap_content">
         </TextView>
 
         <TextView
             android:id="@+id/detail_wind_textview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wind: 2 km/h NW">
+            android:layout_height="wrap_content">
         </TextView>
 
         <TextView
             android:id="@+id/detail_pressure_textview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pressure: 1017 hPa">
+            android:layout_height="wrap_content">
         </TextView>
 
     </LinearLayout>
