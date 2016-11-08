@@ -28,7 +28,7 @@
     <string name="today">Hoy</string>
 
     <!-- Date label when displaying tomorrow's weather forecast [CHAR LIMIT=20] -->
-    <string name="tomorrow">Mañana</string>
+    <string name="tomorrow">mañana</string>
 
     <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
     <string name="format_full_friendly_date"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="date">%2$s</xliff:g></string>
@@ -54,4 +54,7 @@
     <!-- Humidity format CHAR LIMIT=25]-->
     <string name="format_humidity">Humidity: <xliff:g id="humidity">%1.0f</xliff:g> %%</string>
 
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">sunshine.lulisoft.com</string>
+    <string name="content_authority">com.lulisoft.sunshine</string>
 </resources>
