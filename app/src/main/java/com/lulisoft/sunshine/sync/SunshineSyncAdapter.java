@@ -39,6 +39,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
 import java.util.Vector;
 
 public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
@@ -244,12 +245,14 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                 ContentValues[] cvArray = new ContentValues[cVVector.size()];
                 cVVector.toArray(cvArray);
                 inserted = getContext().getContentResolver().bulkInsert(WeatherContract.WeatherEntry.CONTENT_URI, cvArray);
+
+                // delete old data so we don't build up an endless history
+                getContext().getContentResolver().delete(WeatherContract.WeatherEntry.CONTENT_URI,
+                        WeatherContract.WeatherEntry.COLUMN_DATE + " <= ?",
+                        new String[]{Long.toString(dayTime.setJulianDay(julianStartDay - 1))});
+
+                notifyWeather();
             }
-
-            notifyWeather();
-
-            Log.d(LOG_TAG, "FetchWeather Task Complete. " + inserted + " Inserted");
-
         } catch (JSONException e) {
             Log.e(LOG_TAG, e.getMessage(), e);
             e.printStackTrace();
@@ -369,9 +372,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
         getSyncAccount(context);
     }
 
-
     private void notifyWeather() {
-
         Context context = getContext();
 
         //checking the last update and notify if it' the first of the day
