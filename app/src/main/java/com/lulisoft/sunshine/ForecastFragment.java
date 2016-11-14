@@ -72,6 +72,12 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        inflater.inflate(R.menu.menu_forecastfragment, menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 //        if (id == R.id.action_refresh) {
