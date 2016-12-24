@@ -11,6 +11,7 @@
 
     <string name="pref_header_general">General</string>
     <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_status_key" translatable="false">loc-status</string>
     <string name="pref_location_label">Localidad</string>
     <string name="pref_location_default" translatable="false">Montevideo, UY</string>
     <string name="pref_units_key" translatable="false">units</string>
@@ -24,6 +25,23 @@
     <string name="pref_units_kelvin">kelvin</string>
     <string name="pref_units_default" translatable="false">metric</string>
 
+    <!-- Label for the art pack preference [CHAR LIMIT=30] -->
+    <string name="pref_art_pack_label">Icon Pack</string>
+
+    <!-- Label for Sunshine option in art pack preference [CHAR LIMIT=25] -->
+    <string name="pref_art_pack_label_sunshine">Sunshine</string>
+
+    <!-- Label for cute dogs option in art pack preference [CHAR LIMIT=25] -->
+    <string name="pref_art_pack_label_cute_dogs">Cute dogs</string>
+
+    <!-- Key name for art pack unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_key" translatable="false">art_pack</string>
+
+    <!-- Value in SharedPreferences for Sunshine art pack option [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_sunshine" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-xxhdpi/art_%s.png</string>
+
+    <!-- Value in SharedPreferences for cute dogs art pack  option [CHAR LIMIT=NONE] -->
+    <string name="pref_art_pack_cute_dogs" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-mdpi/art_%s.png</string>
     <!-- Date label when displaying today's weather forecast [CHAR LIMIT=20] -->
     <string name="today">Hoy</string>
 
@@ -69,4 +87,84 @@
     <string name="pref_enable_notifications_true">Habilitadas</string>
     <string name="pref_enable_notifications_false">Deshabilitadas</string>
     <string name="pref_enable_notifications_default" translatable="false">true</string>
+
+    <string name="empty_forecast_list">No hay información del clima disponible</string>
+    <string name="empty_forecast_list_no_network">No hay información del clima disponible. No hay red disponible para consultar datos del clima.</string>
+    <string name="empty_forecast_list_server_down">No hay información del clima disponible. El servior no está devolviendo datos.</string>
+    <string name="empty_forecast_list_server_error">No hay información del clima disponible. El servidor no está devolviendo datos válidos. Por favor revise si hay una nueva versión actualizada de Sunshine.</string>
+    <string name="empty_forecast_list_invalid_location">No hay información del clima disponible. La localidad en las preferencias no es reconocida por el servidor de clima.</string>
+
+    <!-- Strings used when displaying the state of the Location in settings -->
+    <string name="pref_location_error_description">Localidad no válida (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
+    <string name="pref_location_unknown_description">Validando localidad... (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
+
+    <!-- A11y -->
+    <string name="a11y_forecast">Pronóstico: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Ícono de pronóstico: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Máxima: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_low_temp">Mínima: <xliff:g id="low">%1$s</xliff:g></string>
+
+    <!-- Weather Conditions -->
+    <string name="condition_2xx">Tormenta</string>
+    <string name="condition_3xx">Llovizna</string>
+    <string name="condition_500">Lluvia Suave</string>
+    <string name="condition_501">LLuvia Moderada</string>
+    <string name="condition_502">Lluvia Fuerte</string>
+    <string name="condition_503">LLuvia Intensa</string>
+    <string name="condition_504">LLuvia Extrema</string>
+    <string name="condition_511">Lluvia helada</string>
+    <string name="condition_520">LLovizna fina</string>
+    <string name="condition_521">Llovizna</string>
+    <string name="condition_522">LLovizna Fuerte</string>
+    <string name="condition_531">Llovizna Variable</string>
+    <string name="condition_600">Nevada Suave</string>
+    <string name="condition_601">Nevada</string>
+    <string name="condition_602">Nevada Fuerte</string>
+    <string name="condition_611">Aguanieve</string>
+    <string name="condition_612">Llovizna y Aguanieve</string>
+    <string name="condition_615">Lluvia y Nieve Livianas</string> <!-- light rain and snow -->
+    <string name="condition_616">Lluvia y Nieve</string>
+    <string name="condition_620">Llovizna y Nieve Livianas</string> <!-- light shower snow -->
+    <string name="condition_621">Llovizna y Nieve</string>
+    <string name="condition_622">Llovizna y Nieve Fuertes</string> <!-- heavy shower snow -->
+    <string name="condition_701">Bruma</string>
+    <string name="condition_711">Humo</string>
+    <string name="condition_721">Neblina</string>
+    <string name="condition_731">Arena y Polvo</string>
+    <string name="condition_741">Niebla</string>
+    <string name="condition_751">Arena</string>
+    <string name="condition_761">Polvo</string>
+    <string name="condition_762">Cenizas volcánicas</string>
+    <string name="condition_771">Chubascos</string>
+    <string name="condition_781">Tornado</string>
+    <string name="condition_800">Despejado</string>
+    <string name="condition_801">Mayormente Despejado</string>
+    <string name="condition_802">Nubes Aisladas</string>
+    <string name="condition_803">Nubes Dispersas</string>
+    <string name="condition_804">Nubes Encapotadas</string>
+    <string name="condition_900">Tornado</string>
+    <string name="condition_901">Tormenta Tropical</string>
+    <string name="condition_902">Huracán</string>
+    <string name="condition_903">Frío</string>
+    <string name="condition_904">Calor</string>
+    <string name="condition_905">Ventoso</string>
+    <string name="condition_906">Granizo</string>
+    <string name="condition_951">Calmo</string>
+    <string name="condition_952">Brisa Ligera</string>
+    <string name="condition_953">Brisa Suave</string>
+    <string name="condition_954">Brisa Moderada</string> <!-- moderate breeze -->
+    <string name="condition_955">Brisa Fresca</string>
+    <string name="condition_956">Brisa Fuerte</string>
+    <string name="condition_957">Viento Fuerte</string>
+    <string name="condition_958">Vendabal</string>
+    <string name="condition_959">Vendabal Severo</string>
+    <string name="condition_960">Tormenta</string>
+    <string name="condition_961">Tormenta Violenta</string>
+    <string name="condition_962">Huracan</string>
+
+    <string name="condition_unknown">Desconocido (<xliff:g id="low">%1$s</xliff:g>)</string>
+
+    <string name="fb_defaultSenderId" translatable="false">928062928693</string>
+    <string name="fb_weather_alert">Atención: %1$s en %2$s!</string>
+
 </resources>

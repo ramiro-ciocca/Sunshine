@@ -4,16 +4,22 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.facebook.stetho.Stetho;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.lulisoft.sunshine.sync.SunshineSyncAdapter;
 
 public class MainActivity extends AppCompatActivity implements ForecastFragment.Callback {
 
     private final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+    public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
     private String mLocation;
     private Boolean mTwoPane;
 
@@ -24,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
         mLocation = Utility.getPreferredLocation(this);
 
         setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         if (findViewById(R.id.weather_detail_container) != null) {
             // The detail container view will be present only in the large-screen layouts
             // (res/layout-sw600dp). If this view is present, then the activity should be
@@ -45,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
         ForecastFragment forecastFragment = (ForecastFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
         forecastFragment.setUseTodayLayout(!mTwoPane);
         SunshineSyncAdapter.initializeSyncAdapter(this);
+
+        checkPlayServices();
     }
 
     @Override
@@ -109,6 +121,19 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
                     .setData(contentUri);
             startActivity(intent);
         }
+    }
+
+    private void checkPlayServices() {
+        GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (apiAvailability.isUserResolvableError(resultCode)) {
+                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show();
+                } else {
+                    Log.i(LOG_TAG, "This device is not supported.");
+                    finish();
+                }
+            }
     }
 
 }

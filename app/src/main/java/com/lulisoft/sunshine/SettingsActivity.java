@@ -16,7 +16,6 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setupActionBar();
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsActivityFragment())
                 .commit();
@@ -25,7 +24,6 @@ public class SettingsActivity extends AppCompatActivity {
     private void setupActionBar() {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            // Show the Up button in the action bar.
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
