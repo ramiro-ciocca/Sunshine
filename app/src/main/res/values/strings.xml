@@ -49,28 +49,26 @@
     <string name="tomorrow">mañana</string>
 
     <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
-    <string name="format_full_friendly_date"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="date">%2$s</xliff:g></string>
+    <string name="format_full_friendly_date"><xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g></string>
 
     <!-- Strings for formatting weather-related data -->
     <!-- Temperature format [CHAR LIMIT=5] -->
     <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
 
+    <string name="wind">Viento</string>
     <!-- Windspeed formats -->
     <!-- Wind in mph [CHAR LIMIT=25] -->
-    <string name="format_wind_mph">
-        Wind: <xliff:g id="speed">%1$1.0f</xliff:g> mph <xliff:g id="direction">%2$s</xliff:g>
-    </string>
-
+    <string name="format_wind_mph"><xliff:g id="speed">%1$1.0f</xliff:g> mph <xliff:g id="direction">%2$s</xliff:g></string>
     <!-- Wind in kph [CHAR LIMIT=25] -->
-    <string name="format_wind_kmh">
-        Wind: <xliff:g id="speed">%1$1.0f</xliff:g> km/h <xliff:g id="direction">%2$s</xliff:g>
-    </string>
+    <string name="format_wind_kmh"><xliff:g id="speed">%1$1.0f</xliff:g> km/h <xliff:g id="direction">%2$s</xliff:g></string>
 
+    <string name="pressure">Presión</string>
     <!-- Pressure format CHAR LIMIT=25] -->
-    <string name="format_pressure">Pressure: <xliff:g id="pressure">%1.0f</xliff:g> hPa</string>
+    <string name="format_pressure"><xliff:g id="pressure">%1.0f</xliff:g> hPa</string>
 
+    <string name="humidity">Humedad</string>
     <!-- Humidity format CHAR LIMIT=25]-->
-    <string name="format_humidity">Humidity: <xliff:g id="humidity">%1.0f</xliff:g> %%</string>
+    <string name="format_humidity"><xliff:g id="humidity">%1.0f</xliff:g> %%</string>
 
     <!-- SyncAdapter related -->
     <string name="sync_account_type">sunshine.lulisoft.com</string>
@@ -103,6 +101,9 @@
     <string name="a11y_forecast_icon">Ícono de pronóstico: <xliff:g id="condition">%1$s</xliff:g></string>
     <string name="a11y_high_temp">Máxima: <xliff:g id="high">%1$s</xliff:g></string>
     <string name="a11y_low_temp">Mínima: <xliff:g id="low">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Humedad: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Presión Atmosférica: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Velocidad y dirección del viento: <xliff:g id="wind">%1$s</xliff:g></string>
 
     <!-- Weather Conditions -->
     <string name="condition_2xx">Tormenta</string>
