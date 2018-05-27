@@ -94,7 +94,7 @@
 
     <!-- Strings used when displaying the state of the Location in settings -->
     <string name="pref_location_error_description">Localidad no válida (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
-    <string name="pref_location_unknown_description">Validando localidad... (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
+    <string name="pref_location_unknown_description">Validando localidad… (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
 
     <!-- A11y -->
     <string name="a11y_forecast">Pronóstico: <xliff:g id="condition">%1$s</xliff:g></string>
@@ -165,7 +165,16 @@
 
     <string name="condition_unknown">Desconocido (<xliff:g id="low">%1$s</xliff:g>)</string>
 
+    <!-- For Shared Element Transitions -->
+    <string name="detail_icon_transition_name" translatable="false">TN_DetailIcon</string>
+
     <string name="fb_defaultSenderId" translatable="false">928062928693</string>
     <string name="fb_weather_alert">Atención: %1$s en %2$s!</string>
+
+    <string name="pref_current_location_desc">Usar mi ubicación</string>
+
+    <string name="pref_location_latitude" translatable="false">loc-latitude</string>
+    <string name="pref_location_longitude" translatable="false">loc-longitude</string>
+    <string name="attribution_text">Powered by Google</string>
 
 </resources>

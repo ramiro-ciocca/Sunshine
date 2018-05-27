@@ -8,27 +8,15 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:928062928693:android:91eecf4730fc920b",
+        "mobilesdk_app_id": "1:928062928693:android:6758c01416040e24",
         "android_client_info": {
-          "package_name": "com.firebase.uidemo"
+          "package_name": "com.example.ramiro.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "928062928693-48kbr8s9l5chcduvd3gv1kr4o08en5eb.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.firebase.uidemo",
-            "certificate_hash": "87D1D2351C42F4F3E3319CB103D158CE1030D6EE"
-          }
-        },
-        {
-          "client_id": "928062928693-evfn8o3c3lh5646d93fie3dc31hmhftt.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.firebase.uidemo",
-            "certificate_hash": "12A6A2A1CED96A6AAF010AF60FB3084E8B9F3155"
-          }
+          "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
           "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
@@ -62,11 +50,35 @@
       },
       "oauth_client": [
         {
+          "client_id": "928062928693-43dqnd8vrpghlsakj6rj9osbcrtsri4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lulisoft.dreamteam",
+            "certificate_hash": "8d52a1aaf9547c0614fe0f7b917931248fd7605b"
+          }
+        },
+        {
+          "client_id": "928062928693-8fs9s5077rn6rim3one7b6j1ssknvesr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lulisoft.dreamteam",
+            "certificate_hash": "67de0a23f9a2ec451ce909c9721f18f674e3b407"
+          }
+        },
+        {
+          "client_id": "928062928693-sr7e0cei12uev5vt7hghivpmcpli77c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lulisoft.dreamteam",
+            "certificate_hash": "76cd79b408b2572ae363d7e0e160ac4b2316adc3"
+          }
+        },
+        {
           "client_id": "928062928693-mhv9fb2c0u4jhphl1dj9q5ltvv1k2pb7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.lulisoft.dreamteam",
-            "certificate_hash": "D3677324203D67F7ECB44DC4943AA55008BD1FDF"
+            "certificate_hash": "d3677324203d67f7ecb44dc4943aa55008bd1fdf"
           }
         },
         {
@@ -74,7 +86,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.lulisoft.dreamteam",
-            "certificate_hash": "87D1D2351C42F4F3E3319CB103D158CE1030D6EE"
+            "certificate_hash": "87d1d2351c42f4f3e3319cb103d158ce1030d6ee"
           }
         },
         {
@@ -82,104 +94,12 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.lulisoft.dreamteam",
-            "certificate_hash": "12A6A2A1CED96A6AAF010AF60FB3084E8B9F3155"
+            "certificate_hash": "12a6a2a1ced96a6aaf010af60fb3084e8b9f3155"
           }
         },
         {
           "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
           "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB5GMnQOahtRpRGFUL_uyhAAhMRiw4JJXQ"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:928062928693:android:87fcb66cc6ca320a",
-        "android_client_info": {
-          "package_name": "com.google.firebase.quickstart.auth"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "928062928693-f3mk634d65qar1mem28pblereu53opfk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.firebase.quickstart.auth",
-            "certificate_hash": "87D1D2351C42F4F3E3319CB103D158CE1030D6EE"
-          }
-        },
-        {
-          "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB5GMnQOahtRpRGFUL_uyhAAhMRiw4JJXQ"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:928062928693:android:64e58dacc0483faa",
-        "android_client_info": {
-          "package_name": "com.google.firebase.udacity.friendlychat"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "928062928693-hq3ilthcsujigsvd1jujv5ir3imq5fi7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.firebase.udacity.friendlychat",
-            "certificate_hash": "D3677324203D67F7ECB44DC4943AA55008BD1FDF"
-          }
-        },
-        {
-          "client_id": "928062928693-isr4kb14rt3h49do19bi2bb7shvaqn3q.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.firebase.udacity.friendlychat",
-            "certificate_hash": "87D1D2351C42F4F3E3319CB103D158CE1030D6EE"
-          }
         },
         {
           "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
@@ -218,12 +138,16 @@
       },
       "oauth_client": [
         {
-          "client_id": "928062928693-11v3a27lfg8eobl8jlrpv1icq1fg9hen.apps.googleusercontent.com",
+          "client_id": "928062928693-2uo4btg76g11hug13jg0bqksv4nknvni.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.lulisoft.sunshine",
-            "certificate_hash": "87D1D2351C42F4F3E3319CB103D158CE1030D6EE"
+            "certificate_hash": "76cd79b408b2572ae363d7e0e160ac4b2316adc3"
           }
+        },
+        {
+          "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
           "client_id": "928062928693-8lpbdrie2mqtii9toqp5v1q8maf9h46v.apps.googleusercontent.com",
